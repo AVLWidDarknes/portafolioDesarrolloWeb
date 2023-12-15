@@ -1,0 +1,67 @@
+body 
+    background: url(../imagenes/fondoPortafolio.jpg)
+    background-size: cover 
+    background-repeat: no-repeat
+    min-height: 100vh
+    .desarrollo-web
+        min-width: 80%
+        margin: 0 auto
+        min-padding: 20px
+        display: flex 
+        flex-direction: column
+        align-items: center
+        .tituloPrincipal
+            min-margin-top: 30px
+            border: 5px solid rgba(255,255,255,0.6 )
+            border-radius: 6px
+            min-width: 40%
+            padding: 30px
+            display: flex
+            flex-direction: column
+            align-items: center
+            align-content: center
+            &:hover
+                border: 5px solid rgba(255,255,255,1) 
+                transform: scale(1.05,1.05)
+            h1 
+               color:#fff
+               text-align: center
+               text-shadow: 0 0 3px #000
+               font-size: 40px
+               font-family: 'Oswald'
+@media screen and ( max-width:  1980px  )
+    .desarrollo-web
+        .tituloPrincipal
+            margin-top: 30px
+@media screen and ( max-width:  1600px  )
+    .desarrollo-web
+        padding: 20px
+        .tituloPrincipal
+            width: 60%
+            margin-top: 30px
+@media screen and ( max-width:  1210px  )
+    .desarrollo-web
+        width: 100%
+@media screen and ( max-width:  910px  )
+    .desarrollo-web
+        .tituloPrincipal
+            width: 80%
+@media screen and ( max-width:  768px  )
+    .desarrollo-web
+        .container
+            .encabezadoslider
+                margin-bottom: 0px
+        .tituloPrincipal
+            margin-top: 80px
+            width: 90%
+@media screen and ( max-width:  564px  )
+    .desarrollo-web
+        .tituloPrincipal
+            width: 100%
+@media screen and ( max-width:  378px  )
+    .desarrollo-web
+        padding: 0
+        .tituloPrincipal
+            margin-top: 100px
+            border-right: none
+            border-left: none

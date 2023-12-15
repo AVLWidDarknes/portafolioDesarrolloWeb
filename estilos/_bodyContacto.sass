@@ -1,0 +1,205 @@
+body 
+	background:url('../imagenes/galeriaPrincipal/fondoContacto.jpg')
+	background-size: cover
+	background-repeat: no-repeat;
+	min-height: 100vh
+header
+	.menu-responsive
+		top: 0
+
+
+.body
+	.foto
+		margin: 50px 0 10px 0
+		width: 100%
+		text-align: center
+		padding: 30px
+		img 
+			width: 15%
+			border-radius: 50%
+			border: 5px solid rgba(#fff,0.5)
+			text-shadow: 0px 0px 6px #fff
+			transition: 0.7s ease
+			&:hover
+				transform: scale(1.15,1.15) //Nos permite alterar el tamaño y hacer una animacion
+				//sin afectar el espacio entre los elementos
+				border: 5px solid #fff
+	.nombre
+		width: 100%
+		text-align: center
+		color: #fff
+		text-shadow: 0px 0px 6px #000
+		letter-spacing: 10px
+		margin-bottom: 20px
+		line-height: 60px
+		font-size: 23px
+
+	.datos
+		color: #fff
+		text-align: center
+		font-size: 20px
+		display: flex
+		flex-direction: column
+		align-items: center
+		p
+			text-shadow: 0px 0px 4px #000
+			line-height: 30px
+			color: #fd9737
+			display: block
+			padding: 10px
+		.whatssap
+			margin: 20px 0
+			h2
+				text-shadow: 0px 0px 4px #000
+		.redes_sociales
+			width: 50%
+			display: flex
+			flex-direction: row
+			justify-content: center
+			background: rgba(0, 0, 0,0.5)
+			margin-bottom: 30px
+			overflow: hidden
+			a 
+				color: #fff
+				text-align: center
+				width: 100%
+				display: block
+				padding: 25px
+				font-size: 30px
+			.facebook:hover
+				background: #3b5998
+			.twitter:hover
+				background: #1da1f2
+			.instagram:hover
+				background: #e1306c
+			.youtube:hover
+				background: #ff0000
+		.formulario
+			background: transparent	
+			width: 25%	
+			margin: 20px auto	
+			padding: 20px	
+			border-radius: 5px	
+			box-shadow: 0px 0px 5px #000
+			min-height: 400px
+			.error 
+				color: #fff
+				text-align: center
+				background: rgba(#8b1212,0.87)
+				margin-bottom: 20px
+				display: none
+				padding: 20px 
+				border: 1px solid #000 
+				border-radius: 3px 
+				li 
+					margin-bottom: 20px
+			input,textarea
+				display: block
+			input[type="text"],input[type="email"],textarea
+				width: 100%
+				padding: 20px
+				margin-bottom: 20px
+				border-radius: 5px
+				border: 1px solid #226fc1
+				font-size: 16px 
+				&:focus
+					outline: 0px
+					border: 2px solid #fd9737
+
+			textarea
+				min-height: 120px
+				max-height: 300px
+				min-width: 100%
+				max-width: 100%
+			input[type="submit"]
+
+				width: 200px	
+				margin: 0px auto	
+				background: none	
+				border: 1px solid rgba(#000,0.8)	
+				color: #000	
+				padding: 10px	
+				cursor: pointer	
+				font-size: 16px	
+				border-radius: 3px
+				&:hover
+					background: rgba(#fff,0.5)
+					border: 1px solid #fd9737
+
+@media screen and ( max-width:1750px  )
+	.body
+		.foto
+			img 
+				width: 20%
+		.datos
+			.formulario
+				width: 30%
+@media screen and ( max-width:1300px  )
+	.body
+		.datos
+			.formulario
+				width: 40%
+			.redes_sociales
+				width: 65%
+@media screen and ( max-width:1050px  )
+	.body
+		.datos
+			.formulario
+				width: 50%
+@media screen and ( max-width:800px  )
+	.body
+		.foto
+			img 
+				width: 25%
+		.datos
+			.formulario
+				width: 60%
+@media screen and ( max-width:660px  )
+	.body
+		.foto
+			img 
+				width: 30%
+		.datos
+			.formulario
+				width: 70%
+			.redes_sociales 
+				width: 75%
+@media screen and ( max-width:540px  )
+	.body
+		.foto 
+			img 
+				width: 47%
+		.datos
+			.formulario
+				width: 80%
+@media screen and ( max-width:450px  )
+	.body
+		.datos
+			p 
+				font-size: 1
+		.foto 
+			img 
+				width: 55%
+		.datos
+			.formulario
+				width: 90%
+			.redes_sociales 
+				width: 90%
+@media screen and ( max-width:350px  )
+	.body
+		.nombre
+			font-size: 15px
+			padding: 10px 
+		.datos
+			p 
+				font-size: 15px
+			.whatssap
+				font-size: 15px
+			.formulario
+				width: 100%
+				border-radius: 0
+			.redes_sociales
+				width: 100%
+		.foto 
+			img 
+				width: 65%

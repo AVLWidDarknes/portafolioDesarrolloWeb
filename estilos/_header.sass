@@ -1,0 +1,189 @@
+
+		
+header
+	width: 100%
+	background: rgba(#000,0.7)
+	.responsive
+		z-index: 20
+	.bloqueo
+			z-index: 15
+			background: rgba(255,255 ,255 ,0.7 )
+			width: 0%
+			height: 100vh
+			left: 0
+			top: 0
+			position: fixed
+			transition: 0.7s ease
+			filter: blur(6px)
+	.menu-responsive
+		width: 0%
+		height: 100vh
+		position: fixed
+		background: #1f4463
+		z-index: 20
+		display: flex
+		flex-direction: column
+		padding: 20px 0
+		align-items: center
+		color: #fff
+		overflow: hidden
+		transition: 0.7s ease-out
+
+		
+		a,.cerrar-menu
+		   width: 100%
+		   height: 60px
+		   display: block
+		   text-decoration: none
+		   font-size: 30px
+		   text-align: center
+		   margin: 10px 0
+		   color: #fff
+		   line-height: 60px
+		   cursor: pointer
+		   overflow: hidden
+		   &:hover
+			   background: #f87800
+	.img-box,.casilla
+			width: 60px
+			height: 60px
+			position: fixed
+			display: none
+			top: 20px
+			left: 60px
+			z-index: 10
+			outline: none
+			cursor: pointer
+	.casilla
+		z-index: 11
+		opacity: 0
+		&:active ~  .img-box
+			background: #fff
+		&:checked ~ .menu-responsive
+			width: 30%
+		&:checked ~  .bloqueo
+			width: 100%
+			
+
+
+	.img-box
+		line-height: 50px
+		text-align: center
+		font-size: 50px
+		border: 3px solid #000
+		border-radius: 5px
+		padding: 5px
+		cursor: pointer
+		&:active
+			background: #fff
+		img
+			width: 100%
+			height: 100%
+	.menu
+		width: 70%
+		margin: 0 auto
+		display: flex
+		flex-direction: raw
+		justify-content: space-between
+		align-items: center 
+		transition: 1s ease
+		padding: 10px
+
+		nav
+			a
+				color: #fff
+				text-decoration: none
+				margin-right: 40px
+				font-size: 18px
+				&:hover
+					color: gray
+					text-decoration: underline
+		.redes_sociales
+			display: flex
+			justify-content: center
+			flex-direction: row
+			a
+				color: #fff
+				text-align: center
+				width: 100%
+				display: block
+				padding: 10px 20px
+				border-radius: 3px
+				margin: 0 10px
+				font-size: 30px
+			.facebook
+				&:hover
+					background: #3b5998
+			.twitter
+				&:hover
+					background: #1da1f2
+			.instagram
+				&:hover
+					background: #e1306c
+			.youtube
+				&:hover
+					background: #ff0000
+
+//-----------------------Responsive del menu-------------///
+@media screen and (max-width:1625px)
+	header
+		.menu
+			width: 85%
+@media screen and (max-width:1435px)
+	header
+		.menu
+			width: 90%
+@media screen and (max-width:1315px)
+	header
+		.menu
+			width: 95%
+@media screen and (max-width:1230px)
+	header
+		.menu
+			width: 100%
+@media screen and (max-width:1170px)
+	header
+		.menu
+			width: 100%
+			justify-content: space-around
+			padding: 25px
+			.logo
+				display: none
+			.logo_derecho
+				display: none
+@media screen and (max-width:950px)
+	header
+		.menu 
+			display: none
+		.img-box,.casilla
+			display: block
+			left: 20px
+@media screen and (max-width:768px)
+	header
+		.menu-responsive
+			a,.cerrar-menu
+				height: 70px
+				line-height: 70px
+		.casilla
+			&:checked ~ .menu-responsive
+				width: 50%
+@media screen and (max-width:430px)
+	header
+		.menu-responsive
+			a,.cerrar-menu
+				height: 80px
+				line-height: 80px
+		.casilla
+			&:checked ~ .menu-responsive
+				width: 60%
+@media screen and (max-width:300px)
+	header
+		.casilla
+			&:checked ~ .menu-responsive
+				width: 65%
+
+
+
+
+
+		
